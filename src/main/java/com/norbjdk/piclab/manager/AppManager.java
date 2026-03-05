@@ -10,7 +10,7 @@ public class AppManager {
         viewManager = ViewManager.getInstance();
     }
 
-    public AppManager getInstance() {
+    public static AppManager getInstance() {
         if (instance == null) {
             instance = new AppManager();
         }
