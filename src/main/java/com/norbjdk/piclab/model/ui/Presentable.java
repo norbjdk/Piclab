@@ -1,14 +1,14 @@
 package com.norbjdk.piclab.model.ui;
 
-public abstract class Presentable {
-    protected abstract void initComponents();
-    protected abstract void setupComponents();
-    protected abstract void setupStyle();
-    protected abstract void setupLayout();
-    protected abstract void setupEventListeners();
-    protected abstract void setupEventHandlers();
+public interface Presentable {
+    void initComponents();
+    void setupComponents();
+    void setupStyle();
+    void setupLayout();
+    void setupEventListeners();
+    void setupEventHandlers();
 
-    public final void present() {
+    default void present() {
         initComponents();
         setupComponents();
         setupStyle();

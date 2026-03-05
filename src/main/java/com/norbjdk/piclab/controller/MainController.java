@@ -8,42 +8,42 @@ import javafx.scene.layout.BorderPane;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class MainController extends Presentable implements Initializable {
+public class MainController implements Initializable, Presentable {
 
     private @FXML BorderPane root;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        present();
+    }
+
+    @Override
+    public void initComponents() {
 
     }
 
     @Override
-    protected void initComponents() {
+    public void setupComponents() {
 
     }
 
     @Override
-    protected void setupComponents() {
+    public void setupStyle() {
 
     }
 
     @Override
-    protected void setupStyle() {
+    public void setupLayout() {
 
     }
 
     @Override
-    protected void setupLayout() {
+    public void setupEventListeners() {
 
     }
 
     @Override
-    protected void setupEventListeners() {
-
-    }
-
-    @Override
-    protected void setupEventHandlers() {
+    public void setupEventHandlers() {
 
     }
 }
