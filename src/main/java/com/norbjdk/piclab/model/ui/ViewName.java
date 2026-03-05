@@ -4,5 +4,6 @@ public enum ViewName {
     HOME,
     SETTINGS,
     COLLECTION,
-    NEW_PROJECT
+    NEW_PROJECT,
+    EDITOR
 }
