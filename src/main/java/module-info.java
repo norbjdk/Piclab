@@ -9,4 +9,6 @@ module com.norbjdk.piclab {
 
     opens com.norbjdk.piclab to javafx.fxml;
     exports com.norbjdk.piclab;
+    opens com.norbjdk.piclab.controller to javafx.fxml;
+    exports com.norbjdk.piclab.controller;
 }
